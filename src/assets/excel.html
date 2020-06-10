@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Excel</title>
+</head>
+<body>
+    <div id="app" class="conteiner">
+        <div class="excel">
+            <div class="excel__header">
+                <input class="input" type="text" value="Название документа">
+
+                <div class="header__buttons">
+                    <div class="button">
+                        <span class="material-icons">
+                            delete
+                        </span>
+                    </div>
+                    <div class="button">
+                        <span class="material-icons">
+                            exit_to_app
+                        </span>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="excel__toolbar">
+                <div class="toolbar__buttons">
+                    <div class="button">
+                        <span class="material-icons">
+                            format_bold
+                        </span>
+                    </div>
+                    <div class="button">
+                        <span class="material-icons">
+                            format_italic
+                        </span>
+                    </div>
+                    <div class="button">
+                        <span class="material-icons">
+                            format_underlined
+                        </span>
+                    </div>
+                    <div class="button">
+                        <span class="material-icons">
+                            format_align_left
+                        </span>
+                    </div>
+                    <div class="button">
+                        <span class="material-icons">
+                            format_align_justify
+                        </span>
+                    </div>
+                    <div class="button">
+                        <span class="material-icons">
+                            format_align_right
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="excel__formula">
+                <div class="info">
+                    fx
+                </div>
+
+                <div class="input" contenteditable spellcheck="false">
+                </div>
+            </div>
+
+            <div class="excel__table">
+
+                <div class="info-row">
+                    <div class="empty-cell"></div>
+                    <div class="letter-cell">
+                        A
+                    </div>
+                    <div class="letter-cell">
+                        B
+                    </div>
+                    <div class="letter-cell">
+                        C
+                    </div>
+                </div>
+
+                <div class="data-row">
+                    <div class="num-cell">1</div>
+                    <div class="data-cell" contenteditable="">
+                        A1
+                    </div>
+                    <div class="data-cell" contenteditable="">
+                        B1
+                    </div>
+                    <div class="data-cell" contenteditable="">
+                        C1
+                    </div>
+                </div>
+
+                <div class="data-row">
+                    <div class="num-cell">2</div>
+                    <div class="data-cell" contenteditable="">
+                        A1
+                    </div>
+                    <div class="data-cell selected" contenteditable="">
+                        B1
+                    </div>
+                    <div class="data-cell" contenteditable="">
+                        C1
+                    </div>
+                </div>
+
+                <div class="data-row">
+                    <div class="num-cell">3</div>
+                    <div class="data-cell" contenteditable="">
+                        A1
+                    </div>
+                    <div class="data-cell" contenteditable="">
+                        B1
+                    </div>
+                    <div class="data-cell" contenteditable="">
+                        C1
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>

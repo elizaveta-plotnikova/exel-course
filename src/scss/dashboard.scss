@@ -1,0 +1,92 @@
+@import "variables";
+@import "mixins";
+
+.dashboard {
+
+    &__header {
+        height: $dashboard-header-height;
+        top: 0;
+        left: 0;
+        right: 0;
+        position: fixed;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 0 5px #9f9f9f;
+    }
+
+    &__new {
+        background-color: $border-color;
+        margin-top: $dashboard-header-height;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        & .conteiner {
+            width: 1000px;
+
+            & .new {
+                width: 200px;
+                height: 150px;
+                background-color: #ffffff;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 20px 30px;
+                border-radius: 4px;
+
+                &:hover {
+                    border: 1px solid green;
+                    color: green;
+                    box-sizing: border-box;
+                }
+                
+                & a {
+                    text-decoration: none;
+                    font-size: 20px;
+                    color: black;
+                }
+            }
+        }
+    }
+
+    &__table {
+        
+        & .row {
+            display: flex;
+            justify-content: space-between;
+            width: 1000px;
+            margin: 0 auto;
+            font-size: 18px;
+            margin-top: 30px;
+
+        }
+
+        & .list {
+            display: block;
+            width: 1000px;
+            margin: 40px auto;
+
+            & li {
+                display: flex;
+                justify-content: space-between;
+                font-size: 16px;
+                padding: 20px;
+
+                &:hover {
+                    background-color: #e5e5e5;
+                    border-radius: 30px;
+                }
+                
+                & a {
+                    text-decoration: none;
+                    color: black;
+
+                    &:hover {
+                        color: green;
+                    }
+                }    
+            }
+        }
+    }
+}
