@@ -3,9 +3,10 @@
 
 .excel__formula {
     top: $header-height + $toolbar-height;
-    left: 0;
-    right: 0;
-    position: absolute;
+    // left: 0;
+    // right: 0;
+    // position: absolute;
+    height: 100%;
     height: $formula-height;
     display: flex;
     box-sizing: border-box;

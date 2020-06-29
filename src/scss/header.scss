@@ -2,13 +2,14 @@
 @import "mixins";
 
 .excel__header {
-    position: absolute;
+    // position: absolute;
     display: flex;
     justify-content: space-between;
-    top: 0;
-    left: 0;
-    right: 0;
+    // top: 0;
+    // left: 0;
+    // right: 0;
     // background-color: red;
+    height: 100%;
     height: $header-height;
     align-items: center;
 
