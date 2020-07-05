@@ -3,24 +3,39 @@
 
 .excel__table {
     height: 100%;
-    // position: absolute;
     top: $header-height + $toolbar-height + $formula-height;
-    // left: 0;
-    // right: 0;
     overflow: auto;
 
     & .row {
         display: flex;
+        min-height: $cell-hight;
 
         & .row-info {
-            height: $cell-hight;
-            background-color: $border-color;
+            min-height: $cell-hight;
+            background-color: #f5f5f5;
             min-width: $info-cell-width;
-            border-bottom: 1px solid #d3d3d3;
+            border-bottom: 1px solid $border-color;
+            border-right: 1px solid $border-color;
             box-sizing: border-box;
             display: flex;
             align-items: center;
             justify-content: center;
+            position: relative;
+
+            & .row-resize {
+                height: 3px;
+                left: 0;
+                bottom: 0;
+                right: 0;
+                position: absolute;
+                background-color: blue;
+                opacity: 0;
+            }
+
+            & .row-resize:hover {
+                cursor: row-resize;
+                opacity: 1;
+            }
         }
 
         & .row-data {
@@ -29,7 +44,8 @@
             align-items: center;
 
             & .column {
-                height: $cell-hight;
+                min-height: $cell-hight;
+                max-height: $cell-hight;
                 min-width: $cell-width;
                 padding: 2px 5px;
                 box-sizing: border-box;
@@ -40,19 +56,36 @@
                 border-top: 0;
                 border-left: 0;
                 background-color: #f5f5f5;
+                position: relative;
+
+                & .column-resize {
+                    width: 4px;
+                    top: 0;
+                    bottom: 0;
+                    right: 0;
+                    position: absolute;
+                    background-color: blue;
+                    opacity: 0;
+                }
+
+                & .column-resize:hover {
+                    cursor: col-resize;
+                    opacity: 1;
+                }
             }
 
             & .cell {
                 min-height: $cell-hight;
+                min-width: $cell-width;
                 width: $cell-width;
                 padding: 2px 5px;
                 box-sizing: border-box;
                 display: flex;
-                align-items: center;
                 border: 1px solid $border-color;
                 border-top: 0;
                 border-left: 0;
                 outline: none;
+                height: 100%;
             }
         }
     }       
